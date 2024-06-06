@@ -9,7 +9,7 @@ erfnet_pretrainded_20class.pth
 ERFNet full on (19 class + background of cityscape)
 
 # enet.pth:
-our trained enet
+our trained enet (48.73 mIoU)
 - 50 epochs on 19 + background classes
 - wrong due to the fact that i resumed training increasing number of epochs, next time I will use time-based scheduler instead of step-based
 
@@ -24,9 +24,9 @@ our trained enet
   
 - batch size 6
 
-# bisenet.pth
+# bisenet.pth (40.0 mIoU)
 
-- 200 epochs
+- 200 epochs 
 
 - scheduler:
   lr(epoch)=lr0*(1-(epoch)/tot_epoch)**0.9
