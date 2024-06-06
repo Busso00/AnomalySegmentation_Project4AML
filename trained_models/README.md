@@ -44,4 +44,4 @@ our trained enet (48.73 mIoU)
 - 1000 epochs
 - around 68.0 mIoU
 
-- - we use it as a pretrained network and finetune only last output conv layers 
+  - we use it as a pretrained network and finetune only last output conv layers 
