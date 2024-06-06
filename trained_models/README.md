@@ -33,8 +33,8 @@ our trained enet
   lr(epoch)=lr0*(1-(epoch)/tot_epoch)**0.9
 
 - optimizer = pytorch SGD (one order momentum)
-  lr=2.5e-2
-  momentum=0.9
-  weight_decay=1e-4
+  - lr=2.5e-2
+  - momentum=0.9
+  - weight_decay=1e-4
 
 - batch size 16
