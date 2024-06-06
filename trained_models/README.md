@@ -16,11 +16,11 @@ our trained enet
 - scheduler:
   lr(epoch)=lr0*(1-(epoch)/tot_epoch)**0.9
   
-- optimizer = Adam (https://arxiv.org/abs/1412.6980)
+- optimizer = pytorch Adam (2 order momentum)
   - lr=5e-4, 
   - betas=(0.9, 0.999), #weight for running avg of 1st and 2nd order momentums
   - eps=1e-08, #numerical stability purpose
-  - weight_decay=1e-4 #momentum
+  - weight_decay=1e-4
   
 - batch size 6
 
@@ -32,10 +32,9 @@ our trained enet
 - scheduler:
   lr(epoch)=lr0*(1-(epoch)/tot_epoch)**0.9
 
-- optimizer = Adam (https://arxiv.org/abs/1412.6980)
-  - lr=5e-4, 
-  - betas=(0.9, 0.999), #weight for running avg of 1st and 2nd order momentums
-  - eps=1e-08, #numerical stability purpose
-  - weight_decay=1e-4 #momentum
+- optimizer = pytorch SGD (one order momentum)
+  lr=2.5e-2
+  momentum=0.9
+  weight_decay=1e-4
 
 - batch size 16
