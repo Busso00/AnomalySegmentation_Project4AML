@@ -16,11 +16,11 @@ our trained enet
 - scheduler:
   lr(epoch)=lr0*(1-(epoch)/tot_epoch)**0.9
   
-- optimizer = Adam
+- optimizer = Adam (https://arxiv.org/abs/1412.6980)
   - lr=5e-4, 
-  - betas=(0.9, 0.999), #beta 1 "speed", beta 2 "acceleration"
-  - eps=1e-08,
-  - weight_decay=1e-4
+  - betas=(0.9, 0.999), #weight for running avg of 1st and 2nd order momentums
+  - eps=1e-08, #numerical stability purpose
+  - weight_decay=1e-4 #momentum
   
 - batch size 6
 
