@@ -1,14 +1,15 @@
 
-# EROMERA original ERFNet weights
-# erfnet_encoder_pretrained.pth.tar:
-# pretrained ImageNet with a classification task then removing last layers
+
+# erfnet_encoder_pretrained.pth.tar
+from https://github.com/Eromera/erfnet
+pretrained ImageNet with a classification task then removing last layers
 # erfnet_pretrained.pth:
-# ErfNet full on (19 class of cityscape)
-# erfnet_pretrainded_20class.pth
-# ErfNet full on (19 class + background of cityscape)
+ERFNet full on (19 class of cityscape)
+erfnet_pretrainded_20class.pth
+ERFNet full on (19 class + background of cityscape)
 
-# our ENet traininig (enet.pth):
-
+# enet.pth:
+our trained enet
 - 50 epochs on 19 + background classes
 - wrong due to the fact that i resumed training increasing number of epochs, next time I will use time-based scheduler instead of step-based
 
