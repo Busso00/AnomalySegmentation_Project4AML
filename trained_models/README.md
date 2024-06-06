@@ -24,7 +24,7 @@ our trained enet
   
 - batch size 6
 
-# our BiSENet training:
+# bisenet.pth
 
 - 200 epochs
 - ? completed
