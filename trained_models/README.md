@@ -24,7 +24,7 @@ our trained enet
   
 - batch size 6
 
-# out BiSENet training:
+# our BiSENet training:
 
 - 200 epochs
 - ? completed
@@ -32,7 +32,10 @@ our trained enet
 - scheduler:
   lr(epoch)=lr0*(1-(epoch)/tot_epoch)**0.9
 
-- optimizer as BiSeNet paper
+- optimizer = Adam (https://arxiv.org/abs/1412.6980)
+  - lr=5e-4, 
+  - betas=(0.9, 0.999), #weight for running avg of 1st and 2nd order momentums
+  - eps=1e-08, #numerical stability purpose
+  - weight_decay=1e-4 #momentum
 
 - batch size 16
-
