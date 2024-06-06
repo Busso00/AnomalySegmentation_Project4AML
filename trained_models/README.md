@@ -37,3 +37,11 @@ our trained enet (48.73 mIoU)
   - weight_decay=1e-4
 
 - batch size 16
+
+
+# https://github.com/ooooverflow/BiSeNet?tab=readme-ov-file has bisenet pretrained on CamVid(32 road classes)
+
+- 1000 epochs
+- around 68.0 mIoU
+
+- - we use it as a pretrained network and learn only output layers 
