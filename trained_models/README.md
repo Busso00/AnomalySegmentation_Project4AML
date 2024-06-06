@@ -24,7 +24,7 @@ our trained enet (48.73 mIoU)
   
 - batch size 6
 
-# bisenet.pth (40.0 mIoU, see https://drive.google.com/drive/folders/1-8--WxyRcwY94ZkmuBYmuZmrWKbpQNS2)
+# bisenet.pth (40.0 mIoU)
 
 - 200 epochs 
 
