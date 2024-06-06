@@ -27,7 +27,6 @@ our trained enet
 # bisenet.pth
 
 - 200 epochs
-- ? completed
 
 - scheduler:
   lr(epoch)=lr0*(1-(epoch)/tot_epoch)**0.9
