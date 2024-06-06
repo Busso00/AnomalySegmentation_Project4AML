@@ -1,4 +1,4 @@
-
+all pth can be found as model_best.pth in chackpoint @ https://drive.google.com/drive/folders/1-8--WxyRcwY94ZkmuBYmuZmrWKbpQNS2
 
 # erfnet_encoder_pretrained.pth.tar
 from https://github.com/Eromera/erfnet
@@ -24,7 +24,7 @@ our trained enet (48.73 mIoU)
   
 - batch size 6
 
-# bisenet.pth (40.0 mIoU)
+# bisenet.pth (40.0 mIoU, see https://drive.google.com/drive/folders/1-8--WxyRcwY94ZkmuBYmuZmrWKbpQNS2)
 
 - 200 epochs 
 
