@@ -24,7 +24,7 @@ our trained enet (48.73 mIoU)
   
 - batch size 6
 
-# bisenet.pth (40.0 mIoU)
+# bisenet.pth (40.0 mIoU) 
 
 - 200 epochs 
 
@@ -38,10 +38,18 @@ our trained enet (48.73 mIoU)
 
 - batch size 16
 
+# bisenet_finetune.pth (62.8 mIoU)
 
-# https://github.com/ooooverflow/BiSeNet has bisenet pretrained on CamVid(32 road classes)
+- restartt from https://github.com/CoinCheung/BiSeNet
+- finetune for 20 epochs
 
-- 1000 epochs
-- around 68.0 mIoU
+- scheduler:
+  lr(epoch)=lr0*(1-(epoch)/tot_epoch)**0.9
 
-  - we use it as a pretrained network and finetune only last output conv layers 
+- optimizer = pytorch SGD (one order momentum)
+  - lr=2.5e-2
+  - momentum=0.9
+  - weight_decay=1e-4
+
+- batch size 16
+
